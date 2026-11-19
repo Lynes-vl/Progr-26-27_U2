@@ -1,3 +1,11 @@
+def hora(s):
+    fin=f"{s//3600}h"
+    print(fin)
+
+def minuto(s):
+    fin=f"{(s%3600)//60}min"
+    print(fin)
+
 def segundosAtiempoExacto(s):
     fin=""
     if (s//3600)>0:
