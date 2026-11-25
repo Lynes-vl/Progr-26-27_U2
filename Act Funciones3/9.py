@@ -1,8 +1,11 @@
 import random
-num=[]
 bucle=True
-for i in range(100):
-    num.append(random.randint(0,100))
+
+def listaNumeros():
+    num = []
+    for i in range(100):
+        num.append(random.randint(0,1000))
+    return num
 
 def menu():
     print("""===================================================================================
@@ -45,6 +48,9 @@ def reemplazar(num):
     pos=random.randint(0,99)
     x=int(input(f"Sustituye el número {num[pos]} por: "))
     num[pos]=x
+
+num = listaNumeros()
+
 while bucle:
     option=menu()
     match option:
